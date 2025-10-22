@@ -7,10 +7,10 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "start": "node index.js",
     "format": "pnpm biome format --write .",
     "precommit": "pnpm run format && pnpm biome check --write .",
-    "lint": "biome lint --write ."
+    "lint": "biome lint --write .",
+    "start": "netlify dev"
   },
   "author": "InterstellarNetwork",
   "license": "GPL-3.0-or-later",
@@ -23,7 +23,8 @@
     "express": "^4.21.2",
     "express-basic-auth": "^1.2.1",
     "mime": "^4.1.0",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "serverless-http": "^3.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.2"
